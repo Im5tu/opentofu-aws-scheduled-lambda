@@ -6,7 +6,7 @@ An OpenTofu module that creates an AWS Lambda function triggered by EventBridge 
 
 ```hcl
 module "scheduled_lambda" {
-  source = "git::https://github.com/im5tu/opentofu-aws-scheduled-lambda.git?ref=1ae587f69bc37a3faf4fae0aa35267dc91e8bdca"
+  source = "git::https://github.com/im5tu/opentofu-aws-scheduled-lambda.git?ref=961cca14b3b2fb2acac04b49635fc5a8551fa876"
 
   function_name       = "my-scheduled-task"
   image_uri           = "123456789012.dkr.ecr.eu-west-1.amazonaws.com/my-app:latest"
