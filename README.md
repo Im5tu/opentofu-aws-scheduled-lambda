@@ -46,7 +46,7 @@ module "scheduled_lambda" {
 | security_group_ids | List of security group IDs for Lambda (optional) | `list(string)` | `[]` | no |
 | environment_variables | Environment variables for the Lambda function | `map(string)` | `{}` | no |
 | secrets_arns | List of Secrets Manager secret ARNs the Lambda can access | `list(string)` | `[]` | no |
-| additional_policy_statements | Additional IAM policy statements to attach to the Lambda execution role | `list(object)` | `[]` | no |
+| additional_policy_statements | Additional IAM policy statements to attach to the Lambda execution role | `list(object({ effect = string, actions = list(string), resources = list(string) }))` | `[]` | no |
 | tags | Tags to apply to resources | `map(string)` | `{}` | no |
 
 ## Outputs
