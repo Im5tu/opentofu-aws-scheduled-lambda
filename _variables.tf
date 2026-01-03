@@ -99,3 +99,10 @@ variable "additional_policy_statements" {
   }))
   default = []
 }
+
+# Dead Letter Queue
+variable "dead_letter_target_arn" {
+  description = "ARN of SNS topic or SQS queue for failed async invocations (optional)"
+  type        = string
+  default     = null
+}

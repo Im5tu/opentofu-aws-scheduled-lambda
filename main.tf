@@ -24,5 +24,7 @@ module "lambda_function" {
     "scheduled_lambda_execution" = data.aws_iam_policy_document.lambda_execution.json
   }
 
+  dead_letter_target_arn = var.dead_letter_target_arn
+
   tags = var.tags
 }
