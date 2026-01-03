@@ -1,6 +1,6 @@
 # Lambda function (using composable lambda module)
 module "lambda_function" {
-  source = "git::https://github.com/im5tu/opentofu-aws-lambda.git?ref=main"
+  source = "git::https://github.com/im5tu/opentofu-aws-lambda.git?ref=1ae587f69bc37a3faf4fae0aa35267dc91e8bdca"
 
   name                                    = var.function_name
   description                             = "Scheduled Lambda function"
